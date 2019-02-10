@@ -1,0 +1,31 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Feb 13, 2019 at 04:24:32 IST
+irun
+	-access +rwc
+	traffic_ctrl.v
+file: traffic_ctrl.v
+	module worklib.traffic_ctrl:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		traffic_ctrl
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.traffic_ctrl:v <0x4d3092fe>
+			streams:   4, words:  1880
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		        Instances  Unique
+		Modules:        1       1
+		Registers:      4       4
+		Scalar wires:   4       -
+		Always blocks:  3       3
+	Writing initial simulation snapshot: worklib.traffic_ctrl:v
+Loading snapshot worklib.traffic_ctrl:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Feb 13, 2019 at 04:24:34 IST  (total: 00:00:02)

@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(11Feb2019:04:57:35):( irun -access +rwc seq_det_111.v )
+s2::(11Feb2019:04:58:26):( irun -access +rwc seq_det_111.v )
+s3::(11Feb2019:04:58:58):( irun -access +rwc seq_det_111.v )
+s4::(11Feb2019:04:59:28):( irun -access +rwc seq_det_111.v )
+s5::(11Feb2019:04:59:53):( irun -access +rwc seq_det_111.v )
+s6::(11Feb2019:05:00:05):( irun -access +rwc seq_det_111.v seq_det_111_tb.v )
+s7::(11Feb2019:05:00:40):( irun -access +rwc seq_det_111.v seq_det_111_tb.v )
+s8::(11Feb2019:05:06:59):( irun -access +rwc seq_det_111.v seq_det_111_tb.v )

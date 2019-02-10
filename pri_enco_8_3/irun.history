@@ -1,0 +1,5 @@
+s1(10Feb2019:00:47:22):  irun -access +rwc pri_ckt.v pri_enco_8_3.v bin_enco.v 
+s2(10Feb2019:00:50:21):  irun -access +rwc pri_ckt.v pri_enco_8_3.v bin_enco.v 
+s3(10Feb2019:00:56:05):  irun -access +rwc pri_ckt.v pri_enco_8_3.v bin_enco.v pri_enco_8_3_tb.v 
+s4(10Feb2019:00:56:25):  irun -access +rwc pri_ckt.v pri_enco_8_3.v bin_enco.v pri_enco_8_3_tb.v 
+s5(10Feb2019:00:57:49):  irun -access +rwc pri_ckt.v pri_enco_8_3.v bin_enco.v pri_enco_8_3_tb.v 

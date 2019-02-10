@@ -1,0 +1,9 @@
+s1(10Feb2019:21:21:30):  irun -access +rwc sr_ff.v 
+s2(10Feb2019:21:23:45):  irun -access +rwc sr_ff.v 
+s3(10Feb2019:21:24:13):  irun -access +rwc sr_ff.v 
+s4(10Feb2019:21:42:08):  irun -access +rwc sr_ff.v sr_ff_tb.v 
+s5(10Feb2019:21:43:40):  irun -access +rwc sr_ff.v sr_ff_tb.v 
+s6(10Feb2019:21:44:01):  irun -access +rwc sr_ff.v sr_ff_tb.v 
+s7(10Feb2019:21:46:57):  irun -access +rwc sr_ff.v sr_ff_tb.v 
+s8(10Feb2019:21:47:20):  irun -access +rwc sr_ff.v sr_ff_tb.v 
+s9(10Feb2019:21:48:12):  irun -access +rwc sr_ff.v sr_ff_tb.v 

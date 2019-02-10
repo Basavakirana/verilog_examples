@@ -1,0 +1,9 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+mux_2_1.v
+mux_4_1.v
+mux_4_1_tb.v

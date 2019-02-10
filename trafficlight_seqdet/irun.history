@@ -1,0 +1,3 @@
+s1(11Feb2019:07:17:12):  irun -access +rwc seq_det.v 
+s2(11Feb2019:07:25:44):  irun -access +rwc seq_det.v seq_det_tb.v 
+s3(11Feb2019:07:26:31):  irun -access +rwc seq_det.v seq_det_tb.v 

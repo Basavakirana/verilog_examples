@@ -1,0 +1,43 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 25, 2019 at 06:00:24 IST
+irun
+	-access +rwc
+	full_adder.v
+	rca.v
+	rca_tb.v
+file: rca_tb.v
+	module worklib.rca_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		rca_tb
+rca DUT (.a(a),.b(b),.cin(cin),.sum(sum),.carry_out(carry_out));
+                            |
+ncelab: *W,CUVMPW (./rca_tb.v,6|28): port sizes differ in port connection (1/4).
+full_adder fa0(a[0],b[0],cin,w1,sum[0]);
+                           |
+ncelab: *W,CUVMPW (./rca.v,3|27): port sizes differ in port connection (4/1).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.rca_tb:v <0x731e7480>
+			streams:   6, words:  6319
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              6       3
+		Registers:            3       3
+		Scalar wires:         8       -
+		Expanded wires:      12       3
+		Initial blocks:       2       2
+		Cont. assignments:    0       2
+		Pseudo assignments:   3       3
+	Writing initial simulation snapshot: worklib.rca_tb:v
+Loading snapshot worklib.rca_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 15 NS + 0
+./rca_tb.v:22     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 25, 2019 at 06:00:24 IST  (total: 00:00:00)

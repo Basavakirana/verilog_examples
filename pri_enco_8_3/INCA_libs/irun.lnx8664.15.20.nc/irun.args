@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+pri_ckt.v
+pri_enco_8_3.v
+bin_enco.v
+pri_enco_8_3_tb.v

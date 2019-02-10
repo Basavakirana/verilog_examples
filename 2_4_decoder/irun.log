@@ -1,0 +1,38 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 25, 2019 at 05:42:32 IST
+irun
+	-access +rwc
+	decoder_2_4.v
+	decoder_2_4_tb.v
+Recompiling... reason: file './decoder_2_4_tb.v' is newer than expected.
+	expected: Mon Mar 25 05:24:15 2019
+	actual:   Mon Mar 25 05:42:29 2019
+file: decoder_2_4_tb.v
+	module worklib.decoder_2_4_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		decoder_2_4_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.decoder_2_4_tb:v <0x5c173a9a>
+			streams:   4, words:  4417
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           2       2
+		Vectored wires:      2       -
+		Always blocks:       1       1
+		Initial blocks:      2       2
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.decoder_2_4_tb:v
+Loading snapshot worklib.decoder_2_4_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 20 NS + 0
+./decoder_2_4_tb.v:16     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 25, 2019 at 05:42:33 IST  (total: 00:00:01)

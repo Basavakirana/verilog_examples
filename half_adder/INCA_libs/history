@@ -1,0 +1,16 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(18Mar2019:01:50:45):( irun -access +rwc half_adder.v )
+s2::(18Mar2019:01:51:01):( irun -access +rwc half_adder.v half_adder_tb.v )
+s3::(18Mar2019:01:54:50):( irun -access +rwc half_adder.v half_adder_tb.v )
+s4::(18Mar2019:01:56:09):( irun -access +rwc half_adder.v half_adder_tb.v )
+s5::(18Mar2019:01:57:33):( irun -access +rwc half_adder.v half_adder_tb.v )
+s6::(18Mar2019:01:59:21):( irun -access +rwc half_adder.v half_adder_tb.v )
+s7::(19Mar2019:00:55:35):( irun -access +rwc half_adder.v half_adder_tb.v )
+s8::(19Mar2019:00:55:59):( irun -access +rwc half_adder.v half_adder_tb.v )
+s9::(19Mar2019:00:56:50):( irun -access +rwc half_adder.v half_adder_tb.v )
+s10::(19Mar2019:00:57:45):( irun -access +rwc half_adder.v half_adder_tb.v )
+s11::(19Mar2019:00:58:18):( irun -access +rwc half_adder.v half_adder_tb.v )
+s12::(10Feb2019:01:03:28):( irun -access +rwc half_adder.v half_adder_tb.v )

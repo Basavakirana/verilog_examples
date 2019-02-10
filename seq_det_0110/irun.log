@@ -1,0 +1,56 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 10, 2019 at 03:51:13 IST
+irun
+	-access +rwc
+	seq_det_0110.v
+	seq_det_0110_tb.v
+Recompiling... reason: file './seq_det_0110.v' is newer than expected.
+	expected: Sun Feb 10 03:34:08 2019
+	actual:   Sun Feb 10 03:51:01 2019
+file: seq_det_0110.v
+	module worklib.seq_det_0110:v
+		errors: 0, warnings: 0
+file: seq_det_0110_tb.v
+	module worklib.seq_det_0110_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		seq_det_0110_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.seq_det_0110:v <0x221c17f7>
+			streams:   4, words:  1721
+		worklib.seq_det_0110_tb:v <0x667acf42>
+			streams:   8, words:  8191
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        4       -
+		Always blocks:       4       4
+		Initial blocks:      2       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.seq_det_0110_tb:v
+Loading snapshot worklib.seq_det_0110_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time=                   0,clk = 0,input x=0,rst=0,output z=0
+time=                  10,clk = 1,input x=0,rst=1,output z=0
+time=                  15,clk = 0,input x=0,rst=1,output z=0
+time=                  20,clk = 1,input x=0,rst=0,output z=0
+time=                  25,clk = 0,input x=0,rst=0,output z=0
+time=                  30,clk = 1,input x=0,rst=0,output z=0
+time=                  35,clk = 0,input x=0,rst=0,output z=0
+time=                  40,clk = 1,input x=1,rst=0,output z=0
+time=                  45,clk = 0,input x=1,rst=0,output z=0
+time=                  50,clk = 1,input x=1,rst=0,output z=0
+time=                  55,clk = 0,input x=1,rst=0,output z=0
+time=                  60,clk = 1,input x=0,rst=0,output z=0
+time=                  65,clk = 0,input x=0,rst=0,output z=0
+Simulation complete via $finish(1) at time 70 NS + 0
+./seq_det_0110_tb.v:48 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 10, 2019 at 03:51:13 IST  (total: 00:00:00)

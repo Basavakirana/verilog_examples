@@ -1,0 +1,51 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 18, 2019 at 01:16:19 IST
+irun
+	-access +rwc
+	singleport_ram.v
+	singleport_ram_tb.v
+Recompiling... reason: file './singleport_ram.v' is newer than expected.
+	expected: Mon Mar 18 00:56:21 2019
+	actual:   Mon Mar 18 01:16:15 2019
+file: singleport_ram.v
+	module worklib.singleport_ram:v
+		errors: 0, warnings: 0
+file: singleport_ram_tb.v
+	module worklib.singleport_ram_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		singleport_ram_tb
+singleport_ram DUT(clk,we,data_in,addr,data_out);
+                        |
+ncelab: *W,CUVMPW (./singleport_ram_tb.v,10|24): port sizes differ in port connection (1/4).
+singleport_ram DUT(clk,we,data_in,addr,data_out);
+                                     |
+ncelab: *W,CUVMPW (./singleport_ram_tb.v,10|37): port sizes differ in port connection (4/1).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.singleport_ram:v <0x0d06141a>
+			streams:   4, words:  1543
+		worklib.singleport_ram_tb:v <0x58e433e0>
+			streams:   9, words:  8062
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           9       9
+		Scalar wires:        2       -
+		Vectored wires:      3       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.singleport_ram_tb:v
+Loading snapshot worklib.singleport_ram_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+input we=0,data_in=00001101,addr=0011,output data_out=00101101
+Simulation complete via $finish(1) at time 300 NS + 0
+./singleport_ram_tb.v:42 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 18, 2019 at 01:16:19 IST  (total: 00:00:00)

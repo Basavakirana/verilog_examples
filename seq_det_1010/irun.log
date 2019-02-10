@@ -1,0 +1,10 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 10, 2019 at 02:48:50 IST
+irun
+	-access +rwc
+	seq_det_1010.v
+	seq_det_1010_tb.v
+Recompiling... reason: file './seq_det_1010_tb.v' is older than expected.
+	expected: Mon Feb 11 04:14:36 2019
+	actual:   Sun Feb 10 02:48:48 2019
+irun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/vv2trainee25/Desktop/basavakiran/verilog/seq_det_1010/INCA_libs/irun.lnx8664.15.20.nc/.nclib.lock'. pid:65841.

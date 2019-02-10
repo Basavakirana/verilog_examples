@@ -1,0 +1,4 @@
+s1(11Feb2019:00:57:23):  irun -access +rwc pipo.v pipo_tb.v 
+s2(11Feb2019:00:58:54):  irun -access +rwc pipo.v pipo_tb.v 
+s3(11Feb2019:00:59:24):  irun -access +rwc pipo.v pipo_tb.v 
+s4(11Feb2019:00:56:28):  irun -access +rwc pipo.v pipo_tb.v 

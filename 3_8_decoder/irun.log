@@ -1,0 +1,39 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 28, 2019 at 02:07:03 IST
+irun
+	-access +rwc
+	decoder_3_8.v
+	decoder_3_8_tb.v
+Recompiling... reason: file './decoder_3_8.v' is newer than expected.
+	expected: Thu Mar 28 02:05:44 2019
+	actual:   Thu Mar 28 02:07:00 2019
+file: decoder_3_8.v
+	module worklib.decoder_3_8:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		decoder_3_8_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.decoder_3_8:v <0x5193b2f0>
+			streams:   1, words:  1385
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           1       1
+		Scalar wires:        8       -
+		Vectored wires:      1       -
+		Initial blocks:      3       3
+		Cont. assignments:   1       8
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.decoder_3_8_tb:v
+Loading snapshot worklib.decoder_3_8_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 40 NS + 0
+./decoder_3_8_tb.v:29     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 28, 2019 at 02:07:04 IST  (total: 00:00:01)

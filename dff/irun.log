@@ -1,0 +1,40 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 19, 2019 at 01:31:19 IST
+irun
+	-access +rwc
+	dff.v
+	dff_tb.v
+Recompiling... reason: file './dff.v' is newer than expected.
+	expected: Tue Mar 19 01:23:12 2019
+	actual:   Tue Mar 19 01:30:22 2019
+file: dff_tb.v
+	module worklib.dff_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		dff_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.dff_tb:v <0x41122a42>
+			streams:   9, words:  7876
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        5       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Cont. assignments:   1       1
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.dff_tb:v
+Loading snapshot worklib.dff_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+input rst=0,d=0,output q=0,qbar=1
+Simulation complete via $finish(1) at time 150 NS + 0
+./dff_tb.v:42 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 19, 2019 at 01:31:19 IST  (total: 00:00:00)

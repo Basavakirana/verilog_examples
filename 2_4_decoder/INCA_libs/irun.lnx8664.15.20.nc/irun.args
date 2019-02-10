@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+decoder_2_4.v
+decoder_2_4_tb.v

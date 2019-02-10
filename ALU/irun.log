@@ -1,0 +1,119 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 05:17:34 IST
+irun
+	-access +rwc
+	alu.v
+file: alu.v
+parameter            inc=('(4'd1)');
+                           |
+ncvlog: *E,BADBSE (alu.v,8|27): illegal base specification: (() [2.5][2.5.1(IEEE)].
+parameter            inc=('(4'd1)');
+                                  |
+ncvlog: *E,BADBSE (alu.v,8|34): illegal base specification: ()) [2.5][2.5.1(IEEE)].
+parameter            not=4'd8;
+                       |
+ncvlog: *E,FNDKWD (alu.v,15|23): A Verilog keyword was found where an identifier was expected.
+parameter            and=4'd9;
+                       |
+ncvlog: *E,FNDKWD (alu.v,16|23): A Verilog keyword was found where an identifier was expected.
+parameter            nand=4'd10;
+                        |
+ncvlog: *E,FNDKWD (alu.v,17|24): A Verilog keyword was found where an identifier was expected.
+parameter            or=4'd11;
+                      |
+ncvlog: *E,FNDKWD (alu.v,18|22): A Verilog keyword was found where an identifier was expected.
+parameter            nor=4'd12;
+                       |
+ncvlog: *E,FNDKWD (alu.v,19|23): A Verilog keyword was found where an identifier was expected.
+parameter            xor=4'd13;
+                       |
+ncvlog: *E,FNDKWD (alu.v,20|23): A Verilog keyword was found where an identifier was expected.
+parameter            xnor=4'd14;
+                        |
+ncvlog: *E,FNDKWD (alu.v,21|24): A Verilog keyword was found where an identifier was expected.
+parameter            buf=4'd15;
+                       |
+ncvlog: *E,FNDKWD (alu.v,22|23): A Verilog keyword was found where an identifier was expected.
+                    not:temp=~operand1;
+                      |
+ncvlog: *E,ILLPRI (alu.v,35|22): illegal expression primary [4.2(IEEE)].
+                    not:temp=~operand1;
+                       |
+ncvlog: *E,EXPLPA (alu.v,35|23): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    not:temp=~operand1;
+                            |
+ncvlog: *E,EXPLPA (alu.v,35|28): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    not:temp=~operand1;
+                                      |
+ncvlog: *E,EXPLPA (alu.v,35|38): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    and:temp=operand1&operand2;
+                       |
+ncvlog: *E,EXPLPA (alu.v,36|23): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    and:temp=operand1&operand2;
+                            |
+ncvlog: *E,EXPLPA (alu.v,36|28): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    and:temp=operand1&operand2;
+                                     |
+ncvlog: *E,EXPLPA (alu.v,36|37): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    and:temp=operand1&operand2;
+                                              |
+ncvlog: *E,EXPLPA (alu.v,36|46): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    nand:temp=~(operand1&operand2);
+                        |
+ncvlog: *E,EXPLPA (alu.v,37|24): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    nand:temp=~(operand1&operand2);
+                             |
+ncvlog: *E,EXPLPA (alu.v,37|29): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    or:temp=operand1|operand2;
+                      |
+ncvlog: *E,EXPLPA (alu.v,38|22): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    or:temp=operand1|operand2;
+                           |
+ncvlog: *E,EXPLPA (alu.v,38|27): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    or:temp=operand1|operand2;
+                                    |
+ncvlog: *E,EXPLPA (alu.v,38|36): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    or:temp=operand1|operand2;
+                                             |
+ncvlog: *E,EXPLPA (alu.v,38|45): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    nor:temp=~(operand1|operand2);
+                       |
+ncvlog: *E,EXPLPA (alu.v,39|23): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    nor:temp=~(operand1|operand2);
+                            |
+ncvlog: *E,EXPLPA (alu.v,39|28): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    xor:temp=operand1^operand2;
+                       |
+ncvlog: *E,EXPLPA (alu.v,40|23): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    xor:temp=operand1^operand2;
+                            |
+ncvlog: *E,EXPLPA (alu.v,40|28): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    xor:temp=operand1^operand2;
+                                     |
+ncvlog: *E,EXPLPA (alu.v,40|37): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    xor:temp=operand1^operand2;
+                                              |
+ncvlog: *E,EXPLPA (alu.v,40|46): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    xnor:temp=~(operand1^operand2);
+                        |
+ncvlog: *E,EXPLPA (alu.v,41|24): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    xnor:temp=~(operand1^operand2);
+                             |
+ncvlog: *E,EXPLPA (alu.v,41|29): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    buf:temp=operand1;
+                       |
+ncvlog: *E,EXPLPA (alu.v,42|23): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    buf:temp=operand1;
+                            |
+ncvlog: *E,EXPLPA (alu.v,42|28): expecting a left parenthesis ('(') [7.1(IEEE)].
+                    buf:temp=operand1;
+                                     |
+ncvlog: *E,EXPLPA (alu.v,42|37): expecting a left parenthesis ('(') [7.1(IEEE)].
+                endcase
+                      |
+ncvlog: *E,EXPENM (alu.v,43|22): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.alu:v
+		errors: 36, warnings: 0
+ncvlog: *F,NOTOPL: no top-level unit found, must have recursive instances.
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 05:17:34 IST  (total: 00:00:00)

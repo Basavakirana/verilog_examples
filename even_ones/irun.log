@@ -1,0 +1,38 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 05:49:19 IST
+irun
+	-access +rwc
+	even_ones.v
+	even_ones_tb.v
+file: even_ones_tb.v
+	module worklib.even_ones_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		even_ones_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.even_ones:v <0x0f156391>
+			streams:   4, words:  1367
+		worklib.even_ones_tb:v <0x7516a656>
+			streams:   8, words:  7889
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        4       -
+		Always blocks:       4       4
+		Initial blocks:      2       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.even_ones_tb:v
+Loading snapshot worklib.even_ones_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+input x=1,rst=0,output z=1
+Simulation complete via $finish(1) at time 22 NS + 0
+./even_ones_tb.v:43 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 05:49:19 IST  (total: 00:00:00)

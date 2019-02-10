@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(11Feb2019:05:32:25):( irun -access +rwc even_ones.v )
+s2::(11Feb2019:05:33:24):( irun -access +rwc even_ones.v )
+s3::(11Feb2019:05:34:17):( irun -access +rwc even_ones.v )
+s4::(11Feb2019:05:35:12):( irun -access +rwc even_ones.v )
+s5::(11Feb2019:05:48:22):( irun -access +rwc even_ones.v even_ones_tb.v )
+s6::(11Feb2019:05:49:19):( irun -access +rwc even_ones.v even_ones_tb.v )

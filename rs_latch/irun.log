@@ -1,0 +1,7 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 10, 2019 at 04:41:24 IST
+irun
+	-access +rwc
+	rs_latch.v
+	rs_latch_tb.v
+irun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/vv2trainee25/Desktop/basavakiran/verilog/rs_latch/INCA_libs/irun.lnx8664.15.20.nc/.ncrun.lock'. pid:89383.

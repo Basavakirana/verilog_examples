@@ -1,0 +1,62 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 03:30:42 IST
+irun
+	-access +rwc
+	ring.v
+	ring_tb.v
+Recompiling... reason: file './ring_tb.v' is newer than expected.
+	expected: Mon Feb 11 03:29:46 2019
+	actual:   Mon Feb 11 03:30:40 2019
+file: ring_tb.v
+	module worklib.ring_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ring_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ring:v <0x1ecdd100>
+			streams:   2, words:   503
+		worklib.ring_tb:v <0x26912919>
+			streams:   8, words:  7810
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Scalar wires:        3       -
+		Vectored wires:      1       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.ring_tb:v
+Loading snapshot worklib.ring_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+clk=0,rst=0,d=0,q=xxxx
+clk=1,rst=1,d=0,q=1000
+clk=0,rst=1,d=0,q=1000
+clk=1,rst=0,d=0,q=0100
+clk=0,rst=0,d=0,q=0100
+clk=1,rst=0,d=1,q=0010
+clk=0,rst=0,d=1,q=0010
+clk=1,rst=0,d=0,q=0001
+clk=0,rst=0,d=0,q=0001
+clk=1,rst=0,d=1,q=1000
+clk=0,rst=0,d=1,q=1000
+clk=1,rst=0,d=0,q=0100
+clk=0,rst=0,d=0,q=0100
+clk=1,rst=0,d=0,q=0010
+clk=0,rst=0,d=0,q=0010
+clk=1,rst=0,d=0,q=0001
+clk=0,rst=0,d=0,q=0001
+clk=1,rst=0,d=0,q=1000
+clk=0,rst=0,d=0,q=1000
+clk=1,rst=0,d=0,q=0100
+clk=0,rst=0,d=0,q=0100
+Simulation complete via $finish(1) at time 110 NS + 0
+./ring_tb.v:39     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 03:30:43 IST  (total: 00:00:01)

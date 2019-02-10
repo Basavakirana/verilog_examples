@@ -1,0 +1,5 @@
+s1(18Mar2019:00:53:21):  irun -access +rwc singleport_ram.v 
+s2(18Mar2019:00:53:40):  irun -access +rwc singleport_ram.v singleport_ram_tb.v 
+s3(18Mar2019:00:58:55):  irun -access +rwc singleport_ram.v singleport_ram_tb.v 
+s4(18Mar2019:01:15:22):  irun -access +rwc singleport_ram.v singleport_ram_tb.v 
+s5(18Mar2019:01:16:19):  irun -access +rwc singleport_ram.v singleport_ram_tb.v 

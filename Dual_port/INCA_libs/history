@@ -1,0 +1,18 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(18Mar2019:00:01:46):( irun -access +rwc dualport_ram.v )
+s2::(18Mar2019:00:03:38):( irun -access +rwc dualport_ram.v )
+s3::(18Mar2019:00:03:57):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s4::(18Mar2019:00:05:40):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s5::(18Mar2019:00:08:11):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s6::(18Mar2019:00:14:17):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s7::(18Mar2019:01:03:50):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s8::(18Mar2019:01:09:25):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s9::(18Mar2019:01:19:46):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s10::(18Mar2019:01:24:25):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s11::(18Mar2019:01:25:47):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s12::(18Mar2019:01:26:06):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s13::(18Mar2019:01:28:12):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )
+s14::(10Feb2019:01:29:06):( irun -access +rwc dualport_ram.v dualport_ram_tb.v )

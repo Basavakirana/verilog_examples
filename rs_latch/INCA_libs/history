@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(10Feb2019:04:28:48):( irun -access +rwc rs_latch.v rs_latch_tb.v )
+s2::(10Feb2019:04:29:28):( irun -access +rwc rs_latch.v rs_latch_tb.v )
+s3::(10Feb2019:04:40:28):( irun -access +rwc rs_latch.v rs_latch_tb.v )

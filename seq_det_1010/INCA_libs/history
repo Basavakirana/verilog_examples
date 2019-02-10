@@ -1,0 +1,26 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(10Feb2019:09:00:59):( irun -access +rwc seq_det_1010.v )
+s2::(10Feb2019:09:01:57):( irun -access +rwc seq_det_1010_tb.v )
+s3::(10Feb2019:09:02:45):( irun -access +rwc seq_det_1010_tb.v )
+s4::(10Feb2019:09:04:51):( irun -access +rwc seq_det_1010.v )
+s5::(10Feb2019:09:06:54):( irun -access +rwc seq_det_1010.v )
+s6::(10Feb2019:09:08:01):( irun -access +rwc seq_det_1010.v )
+s7::(10Feb2019:09:10:56):( irun -access +rwc seq_det_1010.v )
+s8::(10Feb2019:09:12:04):( irun -access +rwc seq_det_1010.v )
+s9::(10Feb2019:09:13:42):( irun -access +rwc seq_det_1010.v )
+s10::(10Feb2019:09:15:05):( irun -access +rwc seq_det_1010.v )
+s11::(10Feb2019:09:15:25):( irun -access +rwc seq_det_1010.v )
+s12::(10Feb2019:09:20:37):( irun -access +rwc seq_det_1010.v )
+s13::(11Feb2019:03:05:14):( irun -access +rwc seq_det_1010.v )
+s14::(11Feb2019:03:05:53):( irun -access +rwc seq_det_1010.v )
+s15::(11Feb2019:03:06:13):( irun -access +rwc seq_det_0110.v seq_det_0110_tb.v )
+s16::(11Feb2019:04:07:34):( irun -access +rwc seq_det_1010.v )
+s17::(11Feb2019:04:12:29):( irun -access +rwc seq_det_1010.v )
+s18::(11Feb2019:04:13:11):( irun -access +rwc seq_det_1010.v )
+s19::(11Feb2019:04:13:27):( irun -access +rwc seq_det_1010.v seq_det_1010_tb.v )
+s20::(11Feb2019:04:15:04):( irun -access +rwc seq_det_1010.v seq_det_1010_tb.v )
+s21::(11Feb2019:04:15:43):( irun -access +rwc seq_det_1010.v seq_det_1010_tb.v )
+s22::(10Feb2019:02:47:15):( irun -access +rwc seq_det_1010.v seq_det_1010_tb.v )

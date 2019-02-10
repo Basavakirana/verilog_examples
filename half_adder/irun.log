@@ -1,0 +1,38 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 10, 2019 at 01:03:28 IST
+irun
+	-access +rwc
+	half_adder.v
+	half_adder_tb.v
+Recompiling... reason: file './half_adder.v' is older than expected.
+	expected: Tue Mar 19 00:58:16 2019
+	actual:   Sun Feb 10 01:01:11 2019
+file: half_adder_tb.v
+	module worklib.half_adder_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		half_adder_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.half_adder_tb:v <0x738a0a06>
+			streams:   5, words:  4944
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        4       -
+		Initial blocks:      2       2
+		Cont. assignments:   0       2
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.half_adder_tb:v
+Loading snapshot worklib.half_adder_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 40 NS + 0
+./half_adder_tb.v:33 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 10, 2019 at 01:03:29 IST  (total: 00:00:01)

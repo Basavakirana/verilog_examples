@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(25Mar2019:06:01:12):( irun -access +rwc 2_1_mux.v )
+s2::(25Mar2019:06:03:09):( irun -access +rwc mux2_1.v )
+s3::(25Mar2019:06:03:21):( irun -access +rwc mux_2_1.v )
+s4::(25Mar2019:06:03:42):( irun -access +rwc mux_2_1.v )
+s5::(25Mar2019:06:04:28):( irun -access +rwc mux_2_1.v )
+s6::(25Mar2019:06:08:11):( irun -access +rwc mux_2_1.v mux_4_1.v )
+s7::(25Mar2019:06:11:06):( irun -access +rwc mux_2_1.v mux_4_1.v )
+s8::(25Mar2019:06:23:35):( irun -access +rwc mux_2_1.v mux_4_1.v )
+s9::(25Mar2019:06:26:55):( irun -access +rwc mux_2_1.v mux_4_1.v )
+s10::(25Mar2019:06:33:16):( irun -access +rwc mux_2_1.v mux_4_1.v mux_4_1_tb.v )

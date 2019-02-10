@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+tff.v
+dff.v
+tff_tb.v
+-seed
+100

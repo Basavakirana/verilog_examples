@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+singleport_ram.v
+singleport_ram_tb.v

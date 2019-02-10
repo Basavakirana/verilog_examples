@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(11Feb2019:01:14:54):( irun -access +rwc sipo.v sipo_tb.v )
+s2::(11Feb2019:01:15:28):( irun -access +rwc sipo.v sipo_tb.v )

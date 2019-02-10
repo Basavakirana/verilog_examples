@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(18Mar2019:23:46:26):( irun -access +rwc full_adder.v )
+s2::(18Mar2019:23:48:01):( irun -access +rwc full_adder.v )
+s3::(18Mar2019:23:48:18):( irun -access +rwc full_adder.v half_adder.v )
+s4::(19Mar2019:00:34:02):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s5::(19Mar2019:00:35:16):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s6::(19Mar2019:00:38:04):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s7::(19Mar2019:00:38:53):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s8::(19Mar2019:00:39:20):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s9::(19Mar2019:00:40:36):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s10::(19Mar2019:00:42:42):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s11::(19Mar2019:00:43:08):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s12::(19Mar2019:00:46:01):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s13::(19Mar2019:00:46:40):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s14::(19Mar2019:00:47:28):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s15::(19Mar2019:01:00:18):( irun -access +rwc half_adder.v half_adder_tb.v )
+s16::(19Mar2019:01:00:34):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s17::(19Mar2019:01:00:56):( irun -access +rwc full_adder.v half_adder.v full_adder_tb.v )
+s18::(10Feb2019:01:08:43):( irun -access +rwc half_adder.v full_adder.v full_adder_tb.v )

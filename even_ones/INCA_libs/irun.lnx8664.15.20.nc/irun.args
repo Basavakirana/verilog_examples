@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+even_ones.v
+even_ones_tb.v

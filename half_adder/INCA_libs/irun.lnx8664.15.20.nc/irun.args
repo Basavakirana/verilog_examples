@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+half_adder.v
+half_adder_tb.v

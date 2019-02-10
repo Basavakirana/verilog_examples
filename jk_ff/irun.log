@@ -1,0 +1,65 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 10, 2019 at 23:45:23 IST
+irun
+	-access +rwc
+	jk_ff.v
+	jk_ff_tb.v
+Recompiling... reason: file './jk_ff.v' is newer than expected.
+	expected: Sun Feb 10 22:29:12 2019
+	actual:   Sun Feb 10 23:45:18 2019
+file: jk_ff.v
+	module worklib.jk_ff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		jk_ff_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.jk_ff:v <0x4992dc2e>
+			streams:   7, words:  2624
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           7       7
+		Scalar wires:        5       -
+		Always blocks:       2       2
+		Initial blocks:      4       4
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.jk_ff_tb:v
+Loading snapshot worklib.jk_ff_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+clk=0,j=0,k=0,q=0,qbar=0
+clk=1,j=0,k=1,q=0,qbar=1
+clk=0,j=0,k=1,q=0,qbar=1
+clk=1,j=1,k=1,q=1,qbar=0
+clk=0,j=1,k=1,q=1,qbar=0
+clk=1,j=1,k=1,q=0,qbar=1
+clk=0,j=1,k=1,q=0,qbar=1
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+clk=1,j=1,k=0,q=1,qbar=0
+clk=0,j=1,k=0,q=1,qbar=0
+Simulation complete via $finish(1) at time 140 NS + 0
+./jk_ff_tb.v:33     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 10, 2019 at 23:45:24 IST  (total: 00:00:01)

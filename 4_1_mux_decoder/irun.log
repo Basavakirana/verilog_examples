@@ -1,0 +1,46 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 28, 2019 at 02:16:45 IST
+irun
+	-access +rwc
+	decoder.v
+	tristate.v
+	mux_4_1.v
+	mux_4_1_tb.v
+Recompiling... reason: file './mux_4_1.v' is newer than expected.
+	expected: Thu Mar 28 02:13:32 2019
+	actual:   Thu Mar 28 02:14:47 2019
+file: mux_4_1_tb.v
+	module worklib.mux_4_1_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		mux_4_1_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.decoder:v <0x4b8e30c5>
+			streams:   1, words:   714
+		worklib.mux_4_1:v <0x23b6dffc>
+			streams:   0, words:     0
+		worklib.mux_4_1_tb:v <0x7d3a8d0b>
+			streams:   8, words:  7475
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              7       4
+		Registers:            9       6
+		Scalar wires:        13       -
+		Vectored wires:       1       -
+		Always blocks:        4       1
+		Initial blocks:       2       2
+		Cont. assignments:    1       5
+		Pseudo assignments:   5       5
+	Writing initial simulation snapshot: worklib.mux_4_1_tb:v
+Loading snapshot worklib.mux_4_1_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 10 NS + 0
+./mux_4_1_tb.v:23     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 28, 2019 at 02:16:45 IST  (total: 00:00:00)

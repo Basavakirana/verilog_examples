@@ -1,0 +1,60 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 01:15:28 IST
+irun
+	-access +rwc
+	sipo.v
+	sipo_tb.v
+file: sipo.v
+	module worklib.sipo:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		sipo_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.sipo:v <0x33193c1a>
+			streams:   3, words:  1457
+		worklib.sipo_tb:v <0x1e6c2b13>
+			streams:   8, words:  7767
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Scalar wires:        3       -
+		Vectored wires:      1       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.sipo_tb:v
+Loading snapshot worklib.sipo_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+clk=0,rst=0,si=0,q=0000
+clk=1,rst=0,si=0,q=0000
+clk=0,rst=0,si=0,q=0000
+clk=1,rst=0,si=0,q=0000
+clk=0,rst=0,si=0,q=0000
+clk=1,rst=0,si=0,q=0000
+clk=0,rst=0,si=0,q=0000
+clk=1,rst=0,si=0,q=0000
+clk=0,rst=0,si=0,q=0000
+clk=1,rst=0,si=1,q=1000
+clk=0,rst=0,si=0,q=1000
+clk=1,rst=0,si=0,q=0100
+clk=0,rst=0,si=1,q=0100
+clk=1,rst=0,si=1,q=1010
+clk=0,rst=0,si=1,q=1010
+clk=1,rst=0,si=1,q=1101
+clk=0,rst=0,si=1,q=1101
+clk=1,rst=0,si=1,q=1110
+clk=0,rst=0,si=1,q=1110
+clk=1,rst=0,si=1,q=1111
+clk=0,rst=0,si=1,q=1111
+clk=1,rst=0,si=1,q=1111
+Simulation complete via $finish(1) at time 115 NS + 0
+./sipo_tb.v:38     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 01:15:28 IST  (total: 00:00:00)

@@ -1,0 +1,32 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 19, 2019 at 00:12:47 IST
+irun
+	-access +rwc
+	counter5.v
+file: counter5.v
+	module worklib.counter5:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter5
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.counter5:v <0x0c2ba926>
+			streams:   2, words:   556
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		         Instances  Unique
+		Modules:         1       1
+		Registers:       1       1
+		Scalar wires:    3       -
+		Vectored wires:  1       -
+		Always blocks:   1       1
+	Writing initial simulation snapshot: worklib.counter5:v
+Loading snapshot worklib.counter5:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 19, 2019 at 00:12:48 IST  (total: 00:00:01)

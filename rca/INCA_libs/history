@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(25Mar2019:05:52:55):( irun -access +rwc full_adder.v rca.v )
+s2::(25Mar2019:05:53:26):( irun -access +rwc full_adder.v rca.v )
+s3::(25Mar2019:06:00:24):( irun -access +rwc full_adder.v rca.v rca_tb.v )

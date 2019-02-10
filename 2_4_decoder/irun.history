@@ -1,0 +1,4 @@
+s1(25Mar2019:05:17:42):  irun -access +rwc decoder_2_4.v 
+s2(25Mar2019:05:23:30):  irun -access +rwc decoder_2_4.v decoder_2_4_tb.v 
+s3(25Mar2019:05:24:17):  irun -access +rwc decoder_2_4.v decoder_2_4_tb.v 
+s4(25Mar2019:05:42:32):  irun -access +rwc decoder_2_4.v decoder_2_4_tb.v 

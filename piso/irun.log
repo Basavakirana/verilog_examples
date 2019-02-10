@@ -1,0 +1,59 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 02:20:50 IST
+irun
+	-access +rwc
+	piso.v
+	piso_tb.v
+Recompiling... reason: file './piso_tb.v' is newer than expected.
+	expected: Mon Feb 11 02:18:32 2019
+	actual:   Mon Feb 11 02:20:48 2019
+file: piso_tb.v
+	module worklib.piso_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		piso_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.piso_tb:v <0x3ba1ac71>
+			streams:   9, words:  8230
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        4       -
+		Vectored wires:      1       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Cont. assignments:   1       1
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.piso_tb:v
+Loading snapshot worklib.piso_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+clk=0,rst=0,mode=0,d=0000,s0=0
+clk=1,rst=1,mode=0,d=0000,s0=0
+clk=0,rst=1,mode=0,d=0000,s0=0
+clk=1,rst=0,mode=0,d=0000,s0=0
+clk=0,rst=0,mode=0,d=0000,s0=0
+clk=1,rst=0,mode=1,d=0000,s0=0
+clk=0,rst=0,mode=1,d=0000,s0=0
+clk=1,rst=0,mode=1,d=1010,s0=0
+clk=0,rst=0,mode=1,d=1010,s0=0
+clk=1,rst=0,mode=0,d=1010,s0=0
+clk=0,rst=0,mode=0,d=1010,s0=0
+clk=1,rst=0,mode=0,d=1010,s0=0
+clk=0,rst=0,mode=0,d=1010,s0=0
+clk=1,rst=0,mode=0,d=1010,s0=1
+clk=0,rst=0,mode=0,d=1010,s0=1
+clk=1,rst=0,mode=0,d=1010,s0=1
+clk=0,rst=0,mode=0,d=1010,s0=1
+clk=1,rst=0,mode=0,d=1010,s0=1
+clk=0,rst=0,mode=0,d=1010,s0=1
+Simulation complete via $finish(1) at time 100 NS + 0
+./piso_tb.v:39     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 02:20:50 IST  (total: 00:00:00)

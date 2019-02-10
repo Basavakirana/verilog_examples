@@ -1,0 +1,6 @@
+s1(28Mar2019:00:58:20):  irun -access +rwc decoder_3_8.v 
+s2(28Mar2019:00:58:40):  irun -access +rwc decoder_3_8.v 
+s3(28Mar2019:01:04:22):  irun -access +rwc decoder_3_8.v decoder_3_8_tb.v 
+s4(28Mar2019:02:05:26):  irun -access +rwc decoder_3_8.v decoder_3_8_tb.v 
+s5(28Mar2019:02:05:47):  irun -access +rwc decoder_3_8.v decoder_3_8_tb.v 
+s6(28Mar2019:02:07:03):  irun -access +rwc decoder_3_8.v decoder_3_8_tb.v 

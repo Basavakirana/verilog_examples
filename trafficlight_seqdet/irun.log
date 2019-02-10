@@ -1,0 +1,38 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 07:26:31 IST
+irun
+	-access +rwc
+	seq_det.v
+	seq_det_tb.v
+file: seq_det_tb.v
+	module worklib.seq_det_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		seq_det_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.seq_det:v <0x6ac1eb49>
+			streams:   4, words:  1090
+		worklib.seq_det_tb:v <0x13d5f714>
+			streams:   7, words:  5883
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        3       -
+		Always blocks:       4       4
+		Initial blocks:      2       2
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.seq_det_tb:v
+Loading snapshot worklib.seq_det_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+input rst=0,output z=1
+Simulation complete via $finish(1) at time 150 NS + 0
+./seq_det_tb.v:33 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 07:26:31 IST  (total: 00:00:00)

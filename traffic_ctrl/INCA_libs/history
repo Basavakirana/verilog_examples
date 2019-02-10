@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(13Feb2019:04:27:28):( irun -access +rwc traffic_ctrl.v )
+s2::(13Feb2019:04:49:08):( irun -access +rwc traffic_ctrl.v traffic_ctrl_tb.v )
+s3::(13Feb2019:04:50:14):( irun -access +rwc traffic_ctrl.v traffic_ctrl_tb.v )
+s4::(13Feb2019:04:50:38):( irun -access +rwc traffic_ctrl.v traffic_ctrl_tb.v )
+s5::(13Feb2019:04:54:57):( irun -access +rwc traffic_ctrl.v traffic_ctrl_tb.v )
+s6::(13Feb2019:04:56:49):( irun -access +rwc -f traffic_ctrl.v traffic_ctrl_tb.v )
+s7::(13Feb2019:04:57:26):( irun -access +rwc traffic_ctrl.v traffic_ctrl_tb.v )

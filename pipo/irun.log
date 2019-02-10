@@ -1,0 +1,72 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 00:56:28 IST
+irun
+	-access +rwc
+	pipo.v
+	pipo_tb.v
+Recompiling... reason: file './pipo_tb.v' is newer than expected.
+	expected: Mon Feb 11 00:59:22 2019
+	actual:   Mon Feb 11 01:01:02 2019
+file: pipo_tb.v
+	module worklib.pipo_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		pipo_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.pipo_tb:v <0x39f99094>
+			streams:   8, words:  7057
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Scalar wires:        2       -
+		Vectored wires:      2       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.pipo_tb:v
+Loading snapshot worklib.pipo_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+clk=0,rst=0,d=0000,q=0000
+clk=1,rst=1,d=0000,q=0000
+clk=0,rst=1,d=0000,q=0000
+clk=1,rst=0,d=0000,q=0000
+clk=0,rst=0,d=0000,q=0000
+clk=1,rst=0,d=0000,q=0000
+clk=0,rst=0,d=0000,q=0000
+clk=1,rst=0,d=0000,q=0000
+clk=0,rst=0,d=0000,q=0000
+clk=1,rst=0,d=0000,q=0000
+clk=0,rst=0,d=0000,q=0000
+clk=1,rst=0,d=0000,q=0000
+clk=0,rst=0,d=0000,q=0000
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+clk=1,rst=0,d=1001,q=1001
+clk=0,rst=0,d=1001,q=1001
+Simulation complete via $finish(1) at time 170 NS + 0
+./pipo_tb.v:41 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 00:56:28 IST  (total: 00:00:00)
