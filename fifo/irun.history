@@ -1,0 +1,11 @@
+s1(11Feb2019:21:09:07):  irun -access +rwc fifo.v 
+s2(11Feb2019:21:09:58):  irun -access +rwc fifo.v 
+s3(11Feb2019:21:10:43):  irun -access +rwc fifo.v 
+s4(11Feb2019:21:11:33):  irun -access +rwc fifo.v 
+s5(11Feb2019:22:29:42):  irun -access +rwc fifo.v fifo_tb.v 
+s6(11Feb2019:22:31:37):  irun -access +rwc fifo.v fifo_tb.v 
+s7(12Feb2019:00:23:31):  irun -access +rwc fifo.v fifo_tb.v 
+s8(12Feb2019:00:26:24):  irun -access +rwc fifo.v fifo_tb.v 
+s9(12Feb2019:00:27:10):  irun -access +rwc fifo.v fifo_tb.v 
+s10(12Feb2019:00:28:08):  irun -access +rwc fifo.v fifo_tb.v 
+s11(12Feb2019:00:30:18):  irun -access +rwc fifo.v fifo_tb.v 

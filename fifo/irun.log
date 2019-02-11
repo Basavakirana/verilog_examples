@@ -1,0 +1,185 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 12, 2019 at 00:30:18 IST
+irun
+	-access +rwc
+	fifo.v
+	fifo_tb.v
+Recompiling... reason: file './fifo.v' is newer than expected.
+	expected: Tue Feb 12 00:28:05 2019
+	actual:   Tue Feb 12 00:30:13 2019
+file: fifo.v
+	module worklib.fifo:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		fifo_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fifo:v <0x6de0786b>
+			streams:  10, words:  4972
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           11      11
+		Scalar wires:         6       -
+		Vectored wires:       2       -
+		Always blocks:        3       3
+		Initial blocks:       2       2
+		Cont. assignments:    1       2
+		Pseudo assignments:   5       5
+	Writing initial simulation snapshot: worklib.fifo_tb:v
+Loading snapshot worklib.fifo_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+write_ptr=xxxxx, read_ptr=xxxxx, full=x
+
+testcase 1 filling fifo
+write_ptr=00000, read_ptr=00000, full=0
+writing into fifo=  1
+write_ptr=00000, read_ptr=00000, full=0
+writing into fifo=  2
+write_ptr=00001, read_ptr=00000, full=0
+writing into fifo=  3
+write_ptr=00010, read_ptr=00000, full=0
+writing into fifo=  4
+write_ptr=00011, read_ptr=00000, full=0
+writing into fifo=  5
+write_ptr=00100, read_ptr=00000, full=0
+writing into fifo=  6
+write_ptr=00101, read_ptr=00000, full=0
+writing into fifo=  7
+write_ptr=00110, read_ptr=00000, full=0
+writing into fifo=  8
+write_ptr=00111, read_ptr=00000, full=0
+writing into fifo=  9
+write_ptr=01000, read_ptr=00000, full=0
+writing into fifo= 10
+write_ptr=01001, read_ptr=00000, full=0
+writing into fifo= 11
+write_ptr=01010, read_ptr=00000, full=0
+writing into fifo= 12
+write_ptr=01011, read_ptr=00000, full=0
+writing into fifo= 13
+write_ptr=01100, read_ptr=00000, full=0
+writing into fifo= 14
+write_ptr=01101, read_ptr=00000, full=0
+writing into fifo= 15
+write_ptr=01110, read_ptr=00000, full=0
+writing into fifo= 16
+write_ptr=01111, read_ptr=00000, full=0
+
+testcase 2 trying write into fifo when full
+write_ptr=01111, read_ptr=00000, full=0
+attempting write= 17,full=0
+write_ptr=01111, read_ptr=00000, full=0
+attempting write= 18,full=1
+write_ptr=10000, read_ptr=00000, full=1
+
+testcase 3 readata_ing from fifo
+write_ptr=10000, read_ptr=00000, full=1
+readata_ing from fifo=  0
+write_ptr=10000, read_ptr=00000, full=1
+readata_ing from fifo=  1
+write_ptr=10000, read_ptr=00001, full=0
+readata_ing from fifo=  2
+write_ptr=10000, read_ptr=00010, full=0
+readata_ing from fifo=  3
+write_ptr=10000, read_ptr=00011, full=0
+readata_ing from fifo=  4
+write_ptr=10000, read_ptr=00100, full=0
+readata_ing from fifo=  5
+write_ptr=10000, read_ptr=00101, full=0
+readata_ing from fifo=  6
+write_ptr=10000, read_ptr=00110, full=0
+readata_ing from fifo=  7
+write_ptr=10000, read_ptr=00111, full=0
+readata_ing from fifo=  8
+write_ptr=10000, read_ptr=01000, full=0
+readata_ing from fifo=  9
+write_ptr=10000, read_ptr=01001, full=0
+readata_ing from fifo= 10
+write_ptr=10000, read_ptr=01010, full=0
+readata_ing from fifo= 11
+write_ptr=10000, read_ptr=01011, full=0
+readata_ing from fifo= 12
+write_ptr=10000, read_ptr=01100, full=0
+readata_ing from fifo= 13
+write_ptr=10000, read_ptr=01101, full=0
+readata_ing from fifo= 14
+write_ptr=10000, read_ptr=01110, full=0
+readata_ing from fifo= 15
+write_ptr=10000, read_ptr=01111, full=0
+
+testcase 4 readata_ing from empty fifo
+write_ptr=10000, read_ptr=01111, full=0
+attempting read= 15,empty=0
+write_ptr=10000, read_ptr=01111, full=0
+attempting read= 17,empty=1
+write_ptr=10000, read_ptr=10000, full=0
+
+testcase 5 simultaneous write and read
+write_ptr=10000, read_ptr=10000, full=0
+write fifo= 19,read fifo= 17
+write_ptr=10000, read_ptr=10000, full=0
+write fifo= 20,read fifo= 17
+write_ptr=10001, read_ptr=10000, full=0
+write fifo= 21,read fifo= 17
+write_ptr=10001, read_ptr=10001, full=0
+write fifo= 22,read fifo= 17
+write_ptr=10010, read_ptr=10001, full=0
+write fifo= 23,read fifo= 17
+write_ptr=10010, read_ptr=10010, full=0
+write fifo= 24,read fifo= 17
+write_ptr=10011, read_ptr=10010, full=0
+write fifo= 25,read fifo= 17
+write_ptr=10011, read_ptr=10011, full=0
+write fifo= 26,read fifo= 17
+write_ptr=10100, read_ptr=10011, full=0
+
+testcase 6 fifo wrap around
+write_ptr=10100, read_ptr=10011, full=0
+write= 27
+write_ptr=10100, read_ptr=10011, full=0
+write= 28
+write_ptr=10101, read_ptr=10011, full=0
+write= 29
+write_ptr=10110, read_ptr=10011, full=0
+write= 30
+write_ptr=10111, read_ptr=10011, full=0
+write= 31
+write_ptr=11000, read_ptr=10011, full=0
+write= 32
+write_ptr=11001, read_ptr=10011, full=0
+write= 33
+write_ptr=11010, read_ptr=10011, full=0
+write= 34
+write_ptr=11011, read_ptr=10011, full=0
+read= 17
+write_ptr=11011, read_ptr=10011, full=0
+read= 25
+write_ptr=11011, read_ptr=10100, full=0
+read= 27
+write_ptr=11011, read_ptr=10101, full=0
+read= 28
+write_ptr=11011, read_ptr=10110, full=0
+read= 29
+write_ptr=11011, read_ptr=10111, full=0
+read= 30
+write_ptr=11011, read_ptr=11000, full=0
+read= 31
+write_ptr=11011, read_ptr=11001, full=0
+read= 32
+write_ptr=11011, read_ptr=11010, full=0
+all tests completed
+write_ptr=11011, read_ptr=11010, full=0
+write_ptr=11011, read_ptr=11010, full=0
+write_ptr=11011, read_ptr=11010, full=0
+write_ptr=11011, read_ptr=11010, full=0
+write_ptr=11011, read_ptr=11010, full=0
+Simulation complete via $finish(1) at time 730 NS + 0
+./fifo_tb.v:116     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 12, 2019 at 00:30:18 IST  (total: 00:00:00)

@@ -51,11 +51,13 @@ begin
             fifo_count <= fifo_count-1;
         end
     end
+$display("write_ptr=%b, read_ptr=%b, full=%b", write_ptr, read_ptr, full);
+
 end
 
 assign empty =(write_ptr==read_ptr)?1'b1:1'b0;
-assign full = (write_ptr=={~read_ptr[4],read_ptr[3:0]})?1'b1:1'b0;
-
+//assign full = (write_ptr=={~read_ptr[4],read_ptr[3:0]})?1'b1:1'b0;
+assign full = (write_ptr[4] != read_ptr[4]) &&(write_ptr[3:0]==read_ptr[3:0]);
 endmodule
 
 
