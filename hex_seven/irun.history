@@ -1,0 +1,2 @@
+s1(13Feb2019:03:45:29):  irun -access +rwc hex_seven.v hex_seven_tb.v 
+s2(13Feb2019:03:46:15):  irun -access +rwc hex_seven.v hex_seven_tb.v 

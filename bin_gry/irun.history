@@ -1,0 +1,5 @@
+s1(13Feb2019:03:01:44):  irun -access +rwc bin_gry.v bin_gry_tb.v 
+s2(13Feb2019:03:03:02):  irun -access +rwc bin_gry.v bin_gry_tb.v 
+s3(13Feb2019:03:03:32):  irun -access +rwc bin_gry.v bin_gry_tb.v 
+s4(13Feb2019:03:03:54):  irun -access +rwc bin_gry.v bin_gry_tb.v 
+s5(13Feb2019:03:06:04):  irun -access +rwc bin_gry.v bin_gry_tb.v 

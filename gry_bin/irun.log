@@ -1,0 +1,40 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 13, 2019 at 03:26:09 IST
+irun
+	-access +rwc
+	gry_bin.v
+	gry_bin_tb.v
+Recompiling... reason: file './gry_bin_tb.v' is newer than expected.
+	expected: Wed Feb 13 03:25:23 2019
+	actual:   Wed Feb 13 03:26:08 2019
+file: gry_bin_tb.v
+	module worklib.gry_bin_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		gry_bin_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.gry_bin_tb:v <0x07c0d014>
+			streams:   4, words:  4037
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           2       2
+		Scalar wires:        4       -
+		Vectored wires:      1       -
+		Initial blocks:      2       2
+		Cont. assignments:   4       2
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.gry_bin_tb:v
+Loading snapshot worklib.gry_bin_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+gray_in=1000,bin_out=1111
+Simulation complete via $finish(1) at time 100 NS + 0
+./gry_bin_tb.v:14     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 13, 2019 at 03:26:10 IST  (total: 00:00:01)

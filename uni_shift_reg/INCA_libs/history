@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(12Feb2019:01:12:22):( irun -access +rwc uni_shift_reg.v )
+s2::(12Feb2019:01:14:21):( irun -access +rwc uni_shift_reg.v )
+s3::(12Feb2019:01:28:19):( irun -access +rwc uni_shift_reg.v uni_shift_reg_t )
+s4::(12Feb2019:01:28:35):( irun -access +rwc uni_shift_reg.v uni_shift_reg_tb.v )
+s5::(12Feb2019:01:29:19):( irun -access +rwc uni_shift_reg.v uni_shift_reg_tb.v )
+s6::(12Feb2019:01:30:34):( irun -access +rwc uni_shift_reg.v uni_shift_reg_tb.v )

@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(13Feb2019:01:07:11):( irun -access +rwc freq_div_6.v )
+s2::(13Feb2019:01:08:17):( irun -access +rwc freq_div_6.v )
+s3::(13Feb2019:01:09:05):( irun -access +rwc freq_div_6.v )
+s4::(13Feb2019:01:09:47):( irun -access +rwc freq_div_6.v )
+s5::(13Feb2019:01:11:12):( irun -access +rwc freq_div_6.v )
+s6::(13Feb2019:01:12:07):( irun -access +rwc freq_div_6.v )
+s7::(13Feb2019:01:13:43):( irun -access +rwc freq_div_6.v )
+s8::(13Feb2019:01:22:11):( irun -access freq_div_6.v freq_div_6_tb.v )

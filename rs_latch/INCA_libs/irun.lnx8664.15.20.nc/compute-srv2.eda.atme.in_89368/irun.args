@@ -1,8 +1,0 @@
-//
-// File created by:  irun
-// Do not modify this file
-//
--access
-+rwc
-rs_latch.v
-rs_latch_tb.v

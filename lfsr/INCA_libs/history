@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(13Feb2019:00:34:22):( irun -access +rwc lfsr.v )
+s2::(13Feb2019:00:40:10):( irun -access +rwc lfsr.v lfsr_tb.v )
+s3::(13Feb2019:00:41:24):( irun -access +rwc lfsr.v lfsr_tb.v )
+s4::(13Feb2019:01:24:01):( irun -access +rwc lfsr.v lfsr_tb.v )

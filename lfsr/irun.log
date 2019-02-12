@@ -1,0 +1,57 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 13, 2019 at 01:24:01 IST
+irun
+	-access +rwc
+	lfsr.v
+	lfsr_tb.v
+Recompiling... reason: file './lfsr.v' is newer than expected.
+	expected: Wed Feb 13 00:34:09 2019
+	actual:   Wed Feb 13 01:03:09 2019
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		lfsr_tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        3       -
+		Vectored wires:      1       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Cont. assignments:   1       1
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.lfsr_tb:v
+Loading snapshot worklib.lfsr_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+clk=0,rst=x,out=xxxxxxxx
+clk=1,rst=1,out=00000001
+clk=0,rst=1,out=00000001
+clk=1,rst=0,out=00000010
+clk=0,rst=0,out=00000010
+clk=1,rst=0,out=00000100
+clk=0,rst=0,out=00000100
+clk=1,rst=0,out=00001000
+clk=0,rst=0,out=00001000
+clk=1,rst=0,out=00010001
+clk=0,rst=0,out=00010001
+clk=1,rst=0,out=00100011
+clk=0,rst=0,out=00100011
+clk=1,rst=0,out=01000111
+clk=0,rst=0,out=01000111
+clk=1,rst=0,out=10001110
+clk=0,rst=0,out=10001110
+clk=1,rst=0,out=00011100
+clk=0,rst=0,out=00011100
+clk=1,rst=0,out=00111000
+clk=0,rst=0,out=00111000
+clk=1,rst=0,out=01110001
+clk=0,rst=0,out=01110001
+Simulation complete via $finish(1) at time 120 NS + 0
+./lfsr_tb.v:29     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 13, 2019 at 01:24:01 IST  (total: 00:00:00)

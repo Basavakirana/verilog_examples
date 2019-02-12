@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+uni_shift_reg.v
+uni_shift_reg_tb.v

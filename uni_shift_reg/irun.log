@@ -1,0 +1,51 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 12, 2019 at 01:30:34 IST
+irun
+	-access +rwc
+	uni_shift_reg.v
+	uni_shift_reg_tb.v
+Recompiling... reason: file './uni_shift_reg.v' is newer than expected.
+	expected: Tue Feb 12 01:29:00 2019
+	actual:   Tue Feb 12 01:30:32 2019
+file: uni_shift_reg.v
+	module worklib.uni_shift_reg:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uni_shift_reg_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.uni_shift_reg:v <0x45f6af77>
+			streams:   2, words:   975
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           5       5
+		Scalar wires:        2       -
+		Vectored wires:      3       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.uni_shift_reg_tb:v
+Loading snapshot worklib.uni_shift_reg_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time=                   0,rst=x,sel=000,data_in=0000,data_out=xxxx
+time=                  10,rst=1,sel=000,data_in=0000,data_out=0000
+time=                  20,rst=0,sel=000,data_in=0000,data_out=0000
+time=                  25,rst=0,sel=011,data_in=1101,data_out=0000
+time=                  30,rst=0,sel=011,data_in=1101,data_out=1101
+time=                  35,rst=0,sel=001,data_in=1101,data_out=1101
+time=                  40,rst=0,sel=001,data_in=1101,data_out=0110
+time=                  45,rst=0,sel=010,data_in=1101,data_out=0110
+time=                  50,rst=0,sel=010,data_in=1101,data_out=1100
+time=                  55,rst=0,sel=100,data_in=1101,data_out=1100
+time=                  60,rst=0,sel=100,data_in=1101,data_out=1110
+time=                  65,rst=0,sel=000,data_in=1101,data_out=1110
+Simulation complete via $finish(1) at time 115 NS + 0
+./uni_shift_reg_tb.v:43     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 12, 2019 at 01:30:34 IST  (total: 00:00:00)

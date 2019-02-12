@@ -1,0 +1,11 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 13, 2019 at 01:22:11 IST
+irun
+	-access freq_div_6.v
+	freq_div_6_tb.v
+file: freq_div_6_tb.v
+	module worklib.freq_div_6_tb:v
+		errors: 0, warnings: 0
+ncelab: *F,ILACC: illegal ACCESS specification (freq_div_6.v).
+irun: *E,ELBERR: Error during elaboration (status 2), exiting.
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 13, 2019 at 01:22:11 IST  (total: 00:00:00)

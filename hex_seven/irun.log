@@ -1,0 +1,71 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 13, 2019 at 03:46:15 IST
+irun
+	-access +rwc
+	hex_seven.v
+	hex_seven_tb.v
+file: hex_seven_tb.v
+	module worklib.hex_seven_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		hex_seven_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.hex_seven:v <0x40beb8ea>
+			streams:   1, words:   875
+		worklib.hex_seven_tb:v <0x5d8d0196>
+			streams:   5, words:  5519
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Scalar wires:        1       -
+		Vectored wires:      2       -
+		Always blocks:       1       1
+		Initial blocks:      2       2
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.hex_seven_tb:v
+Loading snapshot worklib.hex_seven_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Hex	DP	7-Segment (dp,g,f,e,d,c,b,a)
+ 0	 0	 01111110
+ 1	 0	 00110000
+ 2	 0	 01101101
+ 3	 0	 01111001
+ 4	 0	 00110011
+ 5	 0	 01011011
+ 6	 0	 01011111
+ 7	 0	 01110000
+ 8	 0	 01111111
+ 9	 0	 01111011
+ a	 0	 01110111
+ b	 0	 00011111
+ c	 0	 01001110
+ d	 0	 00111101
+ e	 0	 01001111
+ f	 0	 01000111
+ 0	 1	 11111110
+ 1	 1	 10110000
+ 2	 1	 11101101
+ 3	 1	 11111001
+ 4	 1	 10110011
+ 5	 1	 11011011
+ 6	 1	 11011111
+ 7	 1	 11110000
+ 8	 1	 11111111
+ 9	 1	 11111011
+ a	 1	 11110111
+ b	 1	 10011111
+ c	 1	 11001110
+ d	 1	 10111101
+ e	 1	 11001111
+ f	 1	 11000111
+Simulation complete via $finish(1) at time 320 NS + 0
+./hex_seven_tb.v:29         $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 13, 2019 at 03:46:15 IST  (total: 00:00:00)
