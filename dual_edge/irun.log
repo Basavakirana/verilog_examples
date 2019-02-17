@@ -1,0 +1,48 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 17, 2019 at 22:25:07 IST
+irun
+	-access +rwc
+	dual_edge.v
+	dual_edge_tb.v
+Recompiling... reason: file './dual_edge.v' is newer than expected.
+	expected: Sun Feb 17 22:16:45 2019
+	actual:   Sun Feb 17 22:24:05 2019
+file: dual_edge_tb.v
+	module worklib.dual_edge_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		dual_edge_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.dual_edge:v <0x4853bc70>
+			streams:   6, words:  1926
+		worklib.dual_edge_tb:v <0x06a9606b>
+			streams:   8, words:  8237
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        4       -
+		Always blocks:       2       2
+		Initial blocks:      5       5
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.dual_edge_tb:v
+Loading snapshot worklib.dual_edge_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time=                   0,rst=0,signal=0,q=0
+time=                  10,rst=1,signal=0,q=0
+time=                  20,rst=0,signal=0,q=0
+time=                  25,rst=0,signal=1,q=0
+time=                  30,rst=0,signal=0,q=0
+time=                  35,rst=0,signal=1,q=0
+time=                  50,rst=0,signal=1,q=1
+time=                  60,rst=0,signal=1,q=0
+Simulation complete via $finish(1) at time 90 NS + 0
+./dual_edge_tb.v:39     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 17, 2019 at 22:25:07 IST  (total: 00:00:00)

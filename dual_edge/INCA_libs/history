@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(17Feb2019:22:07:25):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s2::(17Feb2019:22:07:56):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s3::(17Feb2019:22:16:33):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s4::(17Feb2019:22:16:47):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s5::(17Feb2019:22:23:10):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s6::(17Feb2019:22:24:07):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s7::(17Feb2019:22:24:50):( irun -access +rwc dual_edge.v dual_edge_tb.v )
+s8::(17Feb2019:22:25:07):( irun -access +rwc dual_edge.v dual_edge_tb.v )

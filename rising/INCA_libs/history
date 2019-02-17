@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(17Feb2019:21:57:51):( irun -access +rwc rising.v rising_tb.v )
+s2::(17Feb2019:21:58:09):( irun -access +rwc rising.v rising_tb.v )

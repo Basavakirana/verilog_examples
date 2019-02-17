@@ -1,0 +1,45 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 17, 2019 at 21:58:09 IST
+irun
+	-access +rwc
+	rising.v
+	rising_tb.v
+file: rising.v
+	module worklib.rising:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		rising_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.rising:v <0x7bff26f1>
+			streams:   4, words:   946
+		worklib.rising_tb:v <0x49681261>
+			streams:   8, words:  8227
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           4       4
+		Scalar wires:        4       -
+		Always blocks:       2       2
+		Initial blocks:      3       3
+		Cont. assignments:   1       1
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.rising_tb:v
+Loading snapshot worklib.rising_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time=                   0,rst=0,signal=0,q=0
+time=                  10,rst=1,signal=0,q=0
+time=                  20,rst=0,signal=0,q=0
+time=                  25,rst=0,signal=1,q=1
+time=                  30,rst=0,signal=0,q=0
+time=                  35,rst=0,signal=1,q=1
+time=                  40,rst=0,signal=0,q=0
+Simulation complete via $finish(1) at time 90 NS + 0
+./rising_tb.v:39     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 17, 2019 at 21:58:10 IST  (total: 00:00:01)

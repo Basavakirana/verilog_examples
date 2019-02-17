@@ -1,0 +1,194 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 17, 2019 at 21:29:19 IST
+irun
+	-access +rwc
+	fifo_memory.v
+	two_f_synch.v
+	wr_ptr_full.v
+	rd_ptr_empty.v
+	asynch_fifo_top.v
+	asynch_fifo_tb.v
+Recompiling... reason: file './asynch_fifo_tb.v' is newer than expected.
+	expected: Sun Feb 17 21:28:47 2019
+	actual:   Sun Feb 17 21:29:17 2019
+file: asynch_fifo_tb.v
+	module worklib.asynch_fifo_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		asynch_fifo_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.asynch_fifo_tb:v <0x08298553>
+			streams:  12, words: 17022
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              7       6
+		Registers:           18      16
+		Scalar wires:        10       -
+		Vectored wires:      12       -
+		Always blocks:       10       9
+		Initial blocks:       2       2
+		Cont. assignments:    9       9
+		Pseudo assignments:   7       7
+	Writing initial simulation snapshot: worklib.asynch_fifo_tb:v
+Loading snapshot worklib.asynch_fifo_tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Time 15: Write pointer binary:  0 ->  x (increment:  x)
+Time 15: Write pointer gray code: 00000 -> xxxxx
+Time 15: Write pointer NOT incremented - write not enabled
+Time 15: Write pointer binary:  0 ->  0 (increment:  0)
+Time 15: Write pointer gray code: 00000 -> xxxxx
+Time 15: Write pointer NOT incremented - write not enabled
+
+testcase 1 writing into fifo
+data in to the fifo =  1
+Time 30: Write pointer binary:  0 ->  1 (increment:  1)
+Time 30: Write pointer gray code: 00000 -> 00000
+Time 30: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  2
+Time 45: Write pointer binary:  1 ->  1 (increment:  0)
+Time 45: Write pointer gray code: 00001 -> 00001
+Time 45: Write pointer INCREMENTED - write enabled and not full
+Time 45: Write pointer binary:  1 ->  2 (increment:  1)
+Time 45: Write pointer gray code: 00001 -> 00001
+Time 45: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  3
+Time 60: Write pointer binary:  2 ->  2 (increment:  0)
+Time 60: Write pointer gray code: 00011 -> 00011
+Time 60: Write pointer INCREMENTED - write enabled and not full
+Time 60: Write pointer binary:  2 ->  3 (increment:  1)
+Time 60: Write pointer gray code: 00011 -> 00011
+Time 60: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  4
+Time 75: Write pointer binary:  3 ->  3 (increment:  0)
+Time 75: Write pointer gray code: 00010 -> 00010
+Time 75: Write pointer INCREMENTED - write enabled and not full
+Time 75: Write pointer binary:  3 ->  4 (increment:  1)
+Time 75: Write pointer gray code: 00010 -> 00010
+Time 75: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  5
+Time 90: Write pointer binary:  4 ->  4 (increment:  0)
+Time 90: Write pointer gray code: 00110 -> 00110
+Time 90: Write pointer INCREMENTED - write enabled and not full
+Time 90: Write pointer binary:  4 ->  5 (increment:  1)
+Time 90: Write pointer gray code: 00110 -> 00110
+Time 90: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  6
+Time 105: Write pointer binary:  5 ->  5 (increment:  0)
+Time 105: Write pointer gray code: 00111 -> 00111
+Time 105: Write pointer INCREMENTED - write enabled and not full
+Time 105: Write pointer binary:  5 ->  6 (increment:  1)
+Time 105: Write pointer gray code: 00111 -> 00111
+Time 105: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  7
+Time 120: Write pointer binary:  6 ->  6 (increment:  0)
+Time 120: Write pointer gray code: 00101 -> 00101
+Time 120: Write pointer INCREMENTED - write enabled and not full
+Time 120: Write pointer binary:  6 ->  7 (increment:  1)
+Time 120: Write pointer gray code: 00101 -> 00101
+Time 120: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  8
+Time 135: Write pointer binary:  7 ->  7 (increment:  0)
+Time 135: Write pointer gray code: 00100 -> 00100
+Time 135: Write pointer INCREMENTED - write enabled and not full
+Time 135: Write pointer binary:  7 ->  8 (increment:  1)
+Time 135: Write pointer gray code: 00100 -> 00100
+Time 135: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo =  9
+Time 150: Write pointer binary:  8 ->  8 (increment:  0)
+Time 150: Write pointer gray code: 01100 -> 01100
+Time 150: Write pointer INCREMENTED - write enabled and not full
+Time 150: Write pointer binary:  8 ->  9 (increment:  1)
+Time 150: Write pointer gray code: 01100 -> 01100
+Time 150: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 10
+Time 165: Write pointer binary:  9 ->  9 (increment:  0)
+Time 165: Write pointer gray code: 01101 -> 01101
+Time 165: Write pointer INCREMENTED - write enabled and not full
+Time 165: Write pointer binary:  9 -> 10 (increment:  1)
+Time 165: Write pointer gray code: 01101 -> 01101
+Time 165: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 11
+Time 180: Write pointer binary: 10 -> 10 (increment:  0)
+Time 180: Write pointer gray code: 01111 -> 01111
+Time 180: Write pointer INCREMENTED - write enabled and not full
+Time 180: Write pointer binary: 10 -> 11 (increment:  1)
+Time 180: Write pointer gray code: 01111 -> 01111
+Time 180: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 12
+Time 195: Write pointer binary: 11 -> 11 (increment:  0)
+Time 195: Write pointer gray code: 01110 -> 01110
+Time 195: Write pointer INCREMENTED - write enabled and not full
+Time 195: Write pointer binary: 11 -> 12 (increment:  1)
+Time 195: Write pointer gray code: 01110 -> 01110
+Time 195: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 13
+Time 210: Write pointer binary: 12 -> 12 (increment:  0)
+Time 210: Write pointer gray code: 01010 -> 01010
+Time 210: Write pointer INCREMENTED - write enabled and not full
+Time 210: Write pointer binary: 12 -> 13 (increment:  1)
+Time 210: Write pointer gray code: 01010 -> 01010
+Time 210: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 14
+Time 225: Write pointer binary: 13 -> 13 (increment:  0)
+Time 225: Write pointer gray code: 01011 -> 01011
+Time 225: Write pointer INCREMENTED - write enabled and not full
+Time 225: Write pointer binary: 13 -> 14 (increment:  1)
+Time 225: Write pointer gray code: 01011 -> 01011
+Time 225: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 15
+Time 240: Write pointer binary: 14 -> 14 (increment:  0)
+Time 240: Write pointer gray code: 01001 -> 01001
+Time 240: Write pointer INCREMENTED - write enabled and not full
+Time 240: Write pointer binary: 14 -> 15 (increment:  1)
+Time 240: Write pointer gray code: 01001 -> 01001
+Time 240: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 16
+Time 255: Write pointer binary: 15 -> 15 (increment:  0)
+Time 255: Write pointer gray code: 01000 -> 01000
+Time 255: Write pointer INCREMENTED - write enabled and not full
+Time 255: Write pointer binary: 15 -> 16 (increment:  1)
+Time 255: Write pointer gray code: 01000 -> 01000
+Time 255: Write pointer INCREMENTED - write enabled and not full
+data in to the fifo = 17
+Time 270: Write pointer binary: 16 -> 16 (increment:  0)
+Time 270: Write pointer gray code: 11000 -> 11000
+Time 270: Write pointer NOT incremented - buffer FULL
+data in to the fifo = 18
+
+ testcase 2 trying into fifo when fifo is full
+attempting write= 19,full=1
+attempting write= 20,full=1
+
+testcase 3 reading from fifo
+reading from fifo=  2
+reading from fifo=  2
+reading from fifo=  3
+reading from fifo=  4
+reading from fifo=  5
+reading from fifo=  6
+reading from fifo=  7
+reading from fifo=  8
+reading from fifo=  9
+reading from fifo= 10
+reading from fifo= 11
+reading from fifo= 12
+reading from fifo= 13
+reading from fifo= 14
+reading from fifo= 15
+reading from fifo= 16
+reading from fifo= 17
+
+testcase 4 reading from empty fifo
+reading from empty fifo=  2,empty=1
+reading from empty fifo=  2,empty=1
+all tests are completed
+Simulation complete via $finish(1) at time 830 NS + 0
+./asynch_fifo_tb.v:102     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 17, 2019 at 21:29:19 IST  (total: 00:00:00)

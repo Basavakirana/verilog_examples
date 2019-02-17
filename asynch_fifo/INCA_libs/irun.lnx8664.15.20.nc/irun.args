@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+fifo_memory.v
+two_f_synch.v
+wr_ptr_full.v
+rd_ptr_empty.v
+asynch_fifo_top.v
+asynch_fifo_tb.v
